@@ -2,31 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Neg</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Mi cuadernillo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Sour+Gummy:wght@100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
-        <h1>CAMP</h1>
+        
+        <h1>El meu quadernet d'exercicis</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Animals</a></li>
+                <li><a href="#">Familia</a></li>
+                <li><a href="#">Matemàtiques</a></li>
+            </ul>
+        </nav>
+
     </header>
+
     <main>
-        <div id="libreta">
-            <div class="paglibreta">
-                <div></div>
+        <div class="cuaderno">
+            <div class="pagina pagina-izquierda">
+                <h3>Exercici nº1</h3>
+                <div class="contenido-ejercicio">
+                    <p>Juan té 5 pomes i María li regala 3 pomes més.</p>
+                    <p>Quantes pomes té Juan ara?</p>
+
+                    <!-- Ejemplo al poner una imagen:
+                        <img src="/api/placeholder/200/150" alt="Dibujo de manzanas" style="max-width: 100%;"> 
+                    -->
+                </div>
             </div>
-            <div class="separador"></div>
-            <div class="paglibreta" id="a">
-                <div></div>
+        
+            <div class="pagina pagina-derecha">
+                <h3>La teua resposta</h3>
+                <div class="contenido-ejercicio">
+                    <p>Escriu la teua resposta ací:</p>
+                    <input type="number" class="campo-respuesta" placeholder="Nombre de pomes">
+                    <p>Explica com ho has resolt:</p>
+                    <textarea class="campo-respuesta" placeholder="Escriu ací la teua explicació..."></textarea>
+                    <button class="btn-enviar">Comprovar Resposta</button>
+                </div>
             </div>
         </div>
+        
     </main>
     <footer>
-        <h2>Por el increible equipo mazafesio</h2>
+        <h4>&copy; 2025 - Noor | Javier S | Ismail | Javier P</h4>
     </footer>
 </body>
-<!-- <script src="js.js"></script> -->
- <!--  onclick="{
-                document.getElementById('a').style.animationName = 'pasarpag'
-                document.getElementById('a').addEventListener('animationend', function(){window.location.href = 'ejercicio1.html'})
-            }" -->
 </html>
