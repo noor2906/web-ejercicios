@@ -89,6 +89,7 @@ main {
     margin: 2em;
     background: white;
     border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     position: relative;
     max-width: 1250px;
@@ -105,6 +106,7 @@ main {
     overflow-y: auto;
     scrollbar-color: #4a90e2 rgba(0, 0, 0, 0);
     scrollbar-width: thin;
+    background-color: #fff;
 }
 
 .pagina-izquierda {
@@ -127,6 +129,7 @@ h3 {
     display: flex;
     align-items: center;
     gap: 5%;
+    flex-wrap: wrap;
 }
 .campo-respuesta:not(.lit){
 
@@ -156,7 +159,7 @@ textarea {
     margin-top: 1em;
 }
 .lit {
-    width: 50%;
+    width: 20%;
 }
 .expl {
     margin-top: 10%;
@@ -208,6 +211,7 @@ footer {
     box-shadow: 0 20px 30px -7px rgba(97, 118, 238, 0.5);
     transition-duration: 0.3s;
     bottom: 12vh;
+    z-index: 2;
 }
 .next_btn {
     background: linear-gradient(to right, #91c7e8, #4A90E2);
@@ -272,6 +276,69 @@ footer {
 }
 .paint_canvas{
     background-color: #fff;
-    border: #000 1px solid;
+    border: #4A90E2 1px solid;
     cursor: crosshair;
+    z-index: -1;
+}
+.dragndrop, .dragndrop td, .dragndrop th{
+    border: #4A90E2 2px solid;
+    border-collapse: collapse;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+.dragndrop td{
+    height: 80%;
+}
+.dragndrop{
+    height: 30vh;
+    width: 73%;
+}
+.dragndrop_opt, .encercla{
+    background-color: #fff;
+    border: #4A90E2 2px solid;
+    height: 10vh;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 73%;
+    min-width: 240px;
+    margin-bottom: 3vh;
+    justify-content: space-around;
+    padding: 1%;
+
+}
+.dragndrop_opt div, .dragndrop td div, .encercla div{
+    background-color: #fff;
+    border: #4A90E2 1px solid;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    transition: background-color .5s;
+}
+.dragndrop_opt div:hover, .dragndrop td div:hover, .encercla div:hover{
+    background-color: #91c7e8;
+}
+.p_canva_cont{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    margin-bottom: -450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10%;
+}
+.p_canva_cont>div{
+    text-align: center;
+    z-index: 1;
+    height: 200px;
+    width: 100px;
+    position: relative;
+}
+.unscramble{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
