@@ -1,0 +1,19 @@
+PASOS PARA IMPLEMENTAR EL MENU
+
+1.- BORRAR EL <nav> DEL HEADER Y TODO LO QUE TIENE DENTRO
+
+(EL HEADER DEBERÁ QUEDAR DE ESTA MANERA:
+
+    <header>
+
+        <h1>El meu quadernet d'exercicis</h1>
+
+    </header>
+
+)
+
+2.- COPIAR Y PEGAR EL CONTENIDO DE dropdown.html ENTRE EL HEADER Y EL MAIN **FUERA DE AMBOS**
+
+3.- COPIAR Y PEGAR EL CONTENIDO DE dropdown.css DENTRO DE TU css
+
+listo pa
